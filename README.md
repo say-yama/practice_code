@@ -1,19 +1,19 @@
 # README
-Docker環境構築の練習
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Docker環境構築の練習<br>
+コードの練習用<br>
 
 Things you may want to cover:
 
 * Ruby version
+  ruby '3.0.2'
 
 * System dependencies
+  rails '~> 6.1.4'
 
 * Configuration
 
-* Database creation
-
-* Database initialization
+* Database 
+  Mysql5.7
 
 * How to run the test suite
 
