@@ -39,3 +39,12 @@ footer {
 .body {
   margin: 3em;
 }
+
+canvas {
+  background: #eee;
+  }
+
+#canvas-wrapper{
+  width:480px;
+  margin:0 auto;
+}

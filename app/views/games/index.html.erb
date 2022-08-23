@@ -1,0 +1,15 @@
+<h1>ピンポンページ</h1>
+ <div id= "canvas-wrapper">
+  <canvas id="myCanvas" width="480" height="320"></canvas>
+ </div>
+
+ <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    ctx.beginPath();
+    ctx.rect(100, 100, 200, 200);
+    ctx.fillStyke = "blue";
+    ctx.fill();
+    ctx.closePath();
+ </script>
