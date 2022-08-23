@@ -8,5 +8,6 @@ RUN mkdir /app
 WORKDIR /app
 COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
-RUN bundle install
+RUN bundle config set force_ruby_platform true && \
+    bundle install
 COPY . /app
