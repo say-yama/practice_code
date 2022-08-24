@@ -1,4 +1,4 @@
-<h1>ピンポンページ</h1>
+<h1>ピンポンゲーム</h1>
  <div id= "canvas-wrapper">
   <canvas id="myCanvas" width="480" height="320"></canvas>
  </div>
@@ -8,8 +8,20 @@
     var ctx = canvas.getContext("2d");
 
     ctx.beginPath();
-    ctx.rect(100, 100, 200, 200);
-    ctx.fillStyke = "blue";
+    ctx.rect(0, 0, 60, 20);
+    ctx.fillStyle = "blue";
     ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(300, 150, 20, 0, Math.Pl2, false);
+    ctx.fillStyle = "green";
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.rect(100, 300, 100, 10);
+    ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
+    ctx.stroke();
     ctx.closePath();
  </script>
