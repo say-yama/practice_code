@@ -15,10 +15,6 @@ Things you may want to cover:
 * Database 
   Mysql5.7
 
-* How to run the test suite
+*参考サイト
+https://blog.codecamp.jp/javascript-game-production
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
