@@ -1,4 +1,7 @@
 class GamesController < ApplicationController
-  def index
+  def pingpong
+  end
+
+  def blackjack
   end
 end

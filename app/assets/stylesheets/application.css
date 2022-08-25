@@ -24,6 +24,14 @@ header {
   height: 5em;
   width: 100%;
   background: gray;
+  display: flex;
+  align-items: center;
+}
+
+header > h1 {
+  background: #fff;
+  margin-left: 16px;
+  padding: 8px;
 }
 
 footer {
@@ -47,4 +55,13 @@ canvas {
 #canvas-wrapper{
   width:480px;
   margin:0 auto;
+}
+
+.back-link {
+  margin: 16px 0 auto;
+  text-align: right;
+}
+
+.br {
+  margin: 1em;
 }

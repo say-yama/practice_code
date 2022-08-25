@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get '/' => 'homes#top'
+  root to: 'homes#top'
   get 'about' => 'homes#about'
-  resources :games, only: [:index]
+  get 'pingpong' => 'games#pingpong'
+  get 'blackjack' => 'games#blackjack'
 end
