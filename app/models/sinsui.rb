@@ -11,11 +11,18 @@ class Sinsui
   end
 
   def image(card_id)
-    i= card_id*3
-    if "-" == @cards[i]then
+    i = card_id*3
+    if "-" == @cards[i] then
       "cards/ura_r.png"
     else
       "cards/"+@cards[i+1,2]+".png"
+    end
+  end
+
+  def open(card_id)
+    i = card_id*3
+    if "-" == @cards[i] then
+      @cards[i] = "+"
     end
   end
 end
