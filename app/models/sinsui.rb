@@ -1,5 +1,9 @@
 class Sinsui
-  def initialize
+  def initialize(card_data=nil)
+    if card_data then
+      @cards = card_data
+      return
+    end
     @cards = "-g1-g2-g3-g4-g5-g6-g7-g8-g9-ga-gb-gc-gd"
     @cards << "-h1-h2-h3-h4-h5-h6-h7-h8-h9-ha-hb-hc-hd"
     @cards << "-i1-i2-i3-i4-i5-i6-i7-i8-i9-ia-ib-ic-id"
@@ -24,5 +28,9 @@ class Sinsui
     if "-" == @cards[i] then
       @cards[i] = "+"
     end
+  end
+
+  def get
+    @cards
   end
 end
