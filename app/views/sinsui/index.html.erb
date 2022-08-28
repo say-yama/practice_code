@@ -1,0 +1,18 @@
+<h1>"Ruby"で作る神経衰弱</h1>
+<p>参考:Ruby on Rails でトランプのゲームを作ってみませんか</p>
+<p>https://kiiino44.web.fc2.com/index.html</p>
+<br>
+<%= flash[:message] %><br>
+<%= flash[:prompt] %><br>
+<br>
+<% for i in 0...@stage.size do %>
+  <% if i!=0 && 0==(i%11) then %>
+    <br>
+  <% end %>
+
+  <%= link_to image_tag(@stage.image(i)), action: :show, id: i %>
+<% end %>
+
+ <div class= "back-link" >
+  <%= link_to "Topへ戻る", root_path%>
+ </div>
