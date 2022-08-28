@@ -2,6 +2,9 @@
 <p>参考:Ruby on Rails でトランプのゲームを作ってみませんか</p>
 <p>https://kiiino44.web.fc2.com/index.html</p>
 <br>
+<%= flash[:message] %><br>
+<%= flash[:prompt] %><br>
+<br>
 <% for i in 0...@stage.size do %>
   <% if i!=0 && 0==(i%11) then %>
     <br>
