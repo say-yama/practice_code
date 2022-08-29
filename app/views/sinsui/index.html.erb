@@ -2,6 +2,13 @@
 <p>参考:Ruby on Rails でトランプのゲームを作ってみませんか</p>
 <p>https://kiiino44.web.fc2.com/index.html</p>
 <br>
+<%= button_to(
+  "シャッフルして配り直す",
+  { action: :index },
+  method: :get,
+  data: { confirm: "現在のゲームがクリアされますが_nいいですか？" }
+) %>
+<br>
 <%= flash[:message] %><br>
 <%= flash[:prompt] %><br>
 <br>
