@@ -2,6 +2,13 @@
 <p>参考:Ruby on Rails でトランプのゲームを作ってみませんか</p>
 <p>https://kiiino44.web.fc2.com/index.html</p>
 <br>
+<%= button_to(
+  "シャッフルして配り直す",
+  { action: :index },
+  method: :get,
+  data: { confirm: "現在のゲームがクリアされますが_nいいですか？" }
+) %>
+
 <%= flash[:message] %><br>
 <%= flash[:prompt] %><br>
 <br>
@@ -10,7 +17,7 @@
     <br>
   <% end %>
 
-  <%= link_to image_tag(@stage.image(i)), action: :show, id: i %>
+  <%= link_to image_tag(@stage.image(i), size: '100x160'), action: :show, id: i %>
 <% end %>
 
  <div class= "back-link" >

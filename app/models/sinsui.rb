@@ -14,6 +14,15 @@ class Sinsui
     @cards << "-h1-h2-h3-h4-h5-h6-h7-h8-h9-ha-hb-hc-hd"
     @cards << "-i1-i2-i3-i4-i5-i6-i7-i8-i9-ia-ib-ic-id"
     @cards << "-j1-j2-j3-j4-j5-j6-j7-j8-j9-ja-jb-jc-jd"
+
+    # シャッフル
+    for no in 0...size do
+      i = no * 3
+      j = Random.rand(size) * 3
+      if i != j then
+        @cards[i,3], @cards[j,3] = @cards[j, 3], @cards[i, 3]
+      end
+    end
   end
 
   def size
